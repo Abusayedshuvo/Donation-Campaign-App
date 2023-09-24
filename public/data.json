@@ -1,0 +1,123 @@
+[
+   {
+    "picture": "health.jpg",
+    "title": "Medical Supplies",
+    "category": "Health",
+    "category_bg": "#FF5733",
+    "card_bg": "#FFC3A0",
+    "text_button_bg": "#FF7755",
+    "description": "Donate medical supplies to support healthcare workers and patients in need.",
+    "price": 50
+  },
+  {
+    "picture": "food.jpg",
+    "title": "Emergency Food Relief",
+    "category": "Food",
+    "category_bg": "#FFAB33",
+    "card_bg": "#FFE080",
+    "text_button_bg": "#FFC3A0",
+    "description": "Help provide food to families facing hunger during difficult times.",
+    "price": 25
+  },
+  {
+    "picture": "education.jpg",
+    "title": "Education Scholarships",
+    "category": "Education",
+    "category_bg": "#33A4FF",
+    "card_bg": "#80C7FF",
+    "text_button_bg": "#66CCFF",
+    "description": "Support the education of underprivileged children through scholarships.",
+    "price": 75
+  },
+  {
+    "picture": "clothing.jpg",
+    "title": "Warm Clothing Drive",
+    "category": "Clothing",
+    "category_bg": "#33FF8D",
+    "card_bg": "#80FFB3",
+    "text_button_bg": "#66FFD9",
+    "description": "Donate warm clothing to help those in need stay comfortable during the winter.",
+    "price": 30
+  },
+  {
+    "picture": "health2.jpg",
+    "title": "Healthcare for Vulnerable Communities",
+    "category": "Health",
+    "category_bg": "#FF5733",
+    "card_bg": "#FFC3A0",
+    "text_button_bg": "#FF7755",
+    "description": "Support healthcare initiatives for vulnerable communities around the world.",
+    "price": 60
+  },
+  {
+    "picture": "food2.jpg",
+    "title": "Meals for Homeless Shelters",
+    "category": "Food",
+    "category_bg": "#FFAB33",
+    "card_bg": "#FFE080",
+    "text_button_bg": "#FFC3A0",
+    "description": "Provide hot meals to homeless shelters and make a difference in someone's life.",
+    "price": 20
+  },
+  {
+    "picture": "education2.jpg",
+    "title": "School Supplies for Children",
+    "category": "Education",
+    "category_bg": "#33A4FF",
+    "card_bg": "#80C7FF",
+    "text_button_bg": "#66CCFF",
+    "description": "Equip children with the necessary school supplies for a brighter future.",
+    "price": 40
+  },
+  {
+    "picture": "clothing2.jpg",
+    "title": "Winter Coats for Kids",
+    "category": "Clothing",
+    "category_bg": "#33FF8D",
+    "card_bg": "#80FFB3",
+    "text_button_bg": "#66FFD9",
+    "description": "Donate winter coats to keep kids warm and safe during the cold season.",
+    "price": 35
+  },
+  {
+    "picture": "health3.jpg",
+    "title": "Medical Research Fund",
+    "category": "Health",
+    "category_bg": "#FF5733",
+    "card_bg": "#FFC3A0",
+    "text_button_bg": "#FF7755",
+    "description": "Contribute to medical research to find cures and treatments for diseases.",
+    "price": 100
+  },
+
+  {
+    "picture": "food3.jpg",
+    "title": "Community Food Banks",
+    "category": "Food",
+    "category_bg": "#FFAB33",
+    "card_bg": "#FFE080",
+    "text_button_bg": "#FFD3A0",
+    "description": "Support local food banks and help provide nutritious food to families in need.",
+    "price": 15
+  },
+  {
+    "picture": "education3.jpg",
+    "title": "Digital Learning Tools",
+    "category": "Education",
+    "category_bg": "#33A4FF",
+    "card_bg": "#80C7FF",
+    "text_button_bg": "#66D9FF",
+    "description": "Supply digital learning tools to students for improved educational access.",
+    "price": 50
+  },
+  {
+    "picture": "clothing3.jpg",
+    "title": "Shelter for Homeless",
+    "category": "Clothing",
+    "category_bg": "#33FF8D",
+    "card_bg": "#80FFB3",
+    "text_button_bg": "#66FFD9",
+    "description": "Help provide shelter and clothing to homeless individuals during winter.",
+    "price": 45
+  }
+]
