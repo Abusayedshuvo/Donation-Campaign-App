@@ -1,9 +1,11 @@
-import Home from "../Home/Home";
+import { Outlet } from "react-router-dom";
+import Header from "../../components/Header/Header";
 
 const Root = () => {
   return (
     <>
-      <Home></Home>
+      <Header></Header>
+      <Outlet></Outlet>
     </>
   );
 };

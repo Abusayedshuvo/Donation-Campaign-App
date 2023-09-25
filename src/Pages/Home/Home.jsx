@@ -1,10 +1,10 @@
-import Header from "../../components/Header/Header";
 import Donations from "../../components/Donations/Donations";
+import Banner from "./../../components/Header/Banner";
 
 const Home = () => {
   return (
     <>
-      <Header></Header>
+      <Banner></Banner>
       <Donations></Donations>
     </>
   );

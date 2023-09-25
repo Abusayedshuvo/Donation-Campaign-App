@@ -4,7 +4,7 @@ import Donation from "./Donation";
 const Donations = () => {
   const [donations, setDonations] = useState([]);
   useEffect(() => {
-    fetch("data3.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => setDonations(data));
   }, []);

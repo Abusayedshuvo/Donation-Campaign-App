@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar bg-transparent">
           <div className="flex-1">
             <NavLink to="/">
-              <img src="images/Logo.png" alt="" />
+              <img src="/images/Logo.png" alt="" />
             </NavLink>
           </div>
           <div className="flex-none">
