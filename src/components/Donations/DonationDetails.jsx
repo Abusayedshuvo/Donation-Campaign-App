@@ -8,7 +8,23 @@ const DonationDetails = () => {
   const { picture, title, description, price, text_color } = donation;
 
   const handleDonate = () => {
-    Swal.fire("Good job!", "You have successfully Donate", "success");
+    const addDonations = [];
+    const donateItems = JSON.parse(localStorage.getItem("items"));
+    if (!donateItems) {
+      addDonations.push(donation);
+      localStorage.setItem("items", JSON.stringify(addDonations));
+      Swal.fire("Good job!", "You have successfully Donate", "success");
+    } else {
+      const isExit = donateItems.find((donateItem) => donateItem.id === id);
+      console.log(isExit);
+      if (!isExit) {
+        addDonations.push(...donateItems, donation);
+        localStorage.setItem("items", JSON.stringify(addDonations));
+        Swal.fire("Good job!", "You have successfully Donate", "success");
+      } else {
+        Swal.fire("Oops!", "You have already added this", "error");
+      }
+    }
   };
 
   return (

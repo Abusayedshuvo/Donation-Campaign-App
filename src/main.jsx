@@ -6,6 +6,7 @@ import Root from "./Pages/Root/Root";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Home from "./Pages/Home/Home";
 import DonationDetails from "./components/Donations/DonationDetails";
+import Donate from "./components/Donate/Donate";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: "/donation/:id",
         element: <DonationDetails></DonationDetails>,
         loader: () => fetch("../data.json"),
+      },
+      {
+        path: "/donate",
+        element: <Donate></Donate>,
       },
     ],
   },

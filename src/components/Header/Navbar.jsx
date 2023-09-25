@@ -35,7 +35,7 @@ const Navbar = () => {
                       ? "pending"
                       : ""
                   }
-                  to="/donation"
+                  to="/donate"
                 >
                   Donation
                 </NavLink>
