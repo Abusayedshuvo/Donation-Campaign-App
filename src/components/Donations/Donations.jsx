@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 import Donation from "./Donation";
 
-const Donations = () => {
+const Donations = ({ search }) => {
   const [donations, setDonations] = useState([]);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
-      .then((data) => setDonations(data));
+      .then(function (donations) {
+        if (search) {
+          donations.filter((donation) => {
+            console.log(donation);
+          });
+        }
+        setDonations(donations);
+      });
+    // .then((res) => res.json())
+    // .then((data) => setDonations(data));
   }, []);
+
+  // console.log(donations);
 
   return (
     <div className="container mx-auto my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

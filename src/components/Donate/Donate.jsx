@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Donate = () => {
   const [items, setItems] = useState([]);
@@ -28,8 +29,8 @@ const Donate = () => {
 
       <div
         className={`text-center mt-20 ${
-          datalength > 5 || datalength === items.length ? "hidden" : "block"
-        }`}
+          datalength === items.length ? "hidden" : "block"
+        } `}
       >
         <button
           onClick={() => setDatalength(items.length)}
@@ -43,8 +44,16 @@ const Donate = () => {
 };
 
 const DonateCard = ({ item }) => {
-  const { picture, category, title, price, card_bg, category_bg, text_color } =
-    item;
+  const {
+    id,
+    picture,
+    category,
+    title,
+    price,
+    card_bg,
+    category_bg,
+    text_color,
+  } = item;
   return (
     <div className="flex rounded-md" style={{ backgroundColor: `${card_bg}` }}>
       <img className="rounded-b-md" src={picture} alt={title} />
@@ -65,13 +74,14 @@ const DonateCard = ({ item }) => {
         <p style={{ color: `${text_color}` }} className="font-semibold">
           ${price}
         </p>
-
-        <button
-          style={{ backgroundColor: `${text_color}` }}
-          className="px-6 py-3 rounded-md text-white mt-3"
-        >
-          View Details
-        </button>
+        <Link to={`/donation/${id}`}>
+          <button
+            style={{ backgroundColor: `${text_color}` }}
+            className="px-6 py-3 rounded-md text-white mt-3"
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
