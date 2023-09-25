@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const Donate = () => {
   const [items, setItems] = useState([]);
   const [noData, setNoData] = useState(false);
+  const [datalength, setDatalength] = useState(4);
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("items"));
@@ -13,18 +14,30 @@ const Donate = () => {
       setNoData("No Data Found");
     }
   }, []);
-
   return (
     <div className="container mx-auto my-20">
       {noData ? (
         <p> {noData} </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
-          {items.map((item) => (
+          {items.slice(0, datalength).map((item) => (
             <DonateCard key={item.id} item={item}></DonateCard>
           ))}
         </div>
       )}
+
+      <div
+        className={`text-center mt-20 ${
+          datalength > 5 || datalength === items.length ? "hidden" : "block"
+        }`}
+      >
+        <button
+          onClick={() => setDatalength(items.length)}
+          className="bg-[#009444] text-white px-6 py-3 rounded-md"
+        >
+          See All
+        </button>
+      </div>
     </div>
   );
 };
@@ -32,7 +45,6 @@ const Donate = () => {
 const DonateCard = ({ item }) => {
   const { picture, category, title, price, card_bg, category_bg, text_color } =
     item;
-  console.log(item);
   return (
     <div className="flex rounded-md" style={{ backgroundColor: `${card_bg}` }}>
       <img className="rounded-b-md" src={picture} alt={title} />
