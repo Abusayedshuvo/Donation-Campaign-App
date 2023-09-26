@@ -19,8 +19,6 @@ const Donations = ({ search }) => {
           // Swal.fire("Oops!", "You have already added this", "error");
         }
       });
-    // .then((res) => res.json())
-    // .then((data) => setDonations(data));
   }, []);
 
   return (

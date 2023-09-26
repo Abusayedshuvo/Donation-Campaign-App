@@ -1,8 +1,5 @@
-# React + Vite
+# Add at least 3 Project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This Donation Campaign App Created By React js and Tailwind css.
+- For using React this project is less coded and more compact
+- Here all component is dynamic. Also here is dynamic data load, dynamic card, dynamic colors, donate option, show donate details option, all donate page, pie chat base on donate.
