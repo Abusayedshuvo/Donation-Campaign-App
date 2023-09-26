@@ -10,7 +10,7 @@ const Banner = ({ handleSearch }) => {
         }}
       >
         <div className="hero-overlay bg-opacity-95 bg-white absolute"></div>
-        <div className="relative">
+        <div className="relative  px-2 md:px-0">
           <div className="flex justify-center items-center h-[50vh] banner">
             <div className="text-center">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10">

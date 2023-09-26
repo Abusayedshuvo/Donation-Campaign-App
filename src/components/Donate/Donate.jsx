@@ -15,7 +15,7 @@ const Donate = () => {
     }
   }, []);
   return (
-    <div className="container mx-auto my-20">
+    <div className="container mx-auto my-20 px-2 md:px-0">
       {noData ? (
         <p> {noData} </p>
       ) : (
@@ -56,8 +56,15 @@ const DonateCard = ({ item }) => {
     text_color,
   } = item;
   return (
-    <div className="flex rounded-md" style={{ backgroundColor: `${card_bg}` }}>
-      <img className="rounded-b-md" src={picture} alt={title} />
+    <div
+      className="md:flex rounded-md"
+      style={{ backgroundColor: `${card_bg}` }}
+    >
+      <img
+        className="rounded-b-md w-full md:w-auto"
+        src={picture}
+        alt={title}
+      />
       <div className="pl-5 py-5 w-full">
         <p>
           <span

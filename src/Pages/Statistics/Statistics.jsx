@@ -36,7 +36,7 @@ const Statistics = () => {
         ]}
       />
       ;
-      <div className="flex gap-40 justify-between mt-16">
+      <div className="md:flex gap-40 justify-between mt-16">
         <p>
           <span>Your Donation</span>
           <span className="bg-[#00C49F] w-20 h-2 absolute mt-2 ml-4"></span>

@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar bg-transparent">
           <div className="navbar-start w-full justify-between ">
             <NavLink to="/">
-              <img src="/images/Logo.png" alt="" />
+              <img className="w-36 md:w-auto" src="/images/Logo.png" alt="" />
             </NavLink>
             <div className="dropdown float-left">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
