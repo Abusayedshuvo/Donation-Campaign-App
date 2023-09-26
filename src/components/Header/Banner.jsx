@@ -1,12 +1,6 @@
+import PropTypes from "prop-types";
+
 const Banner = ({ handleSearch }) => {
-  // const [search, setSearch] = useState("");
-  // const handleSearch = (event) => {
-  //   event.preventDefault();
-  //   setSearch(event.target.search.value);
-  // };
-
-  // console.log(search);
-
   return (
     <>
       <div className="flex justify-center items-center h-[50vh]">
@@ -32,6 +26,10 @@ const Banner = ({ handleSearch }) => {
       </div>
     </>
   );
+};
+
+Banner.propTypes = {
+  handleSearch: PropTypes.func,
 };
 
 export default Banner;

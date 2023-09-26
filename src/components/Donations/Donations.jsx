@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 import { useEffect, useState } from "react";
 import Donation from "./Donation";
 import Swal from "sweetalert2";
@@ -16,7 +17,7 @@ const Donations = ({ search }) => {
           );
           setDonations(categorys);
         } else {
-          // Swal.fire("Oops!", "You have already added this", "error");
+          Swal.fire("Oops!", "You have already added this", "error");
         }
       });
   }, []);
@@ -30,7 +31,7 @@ const Donations = ({ search }) => {
   );
 };
 
-Donations.prototype = {
+Donations.propTypes = {
   search: PropTypes.string,
 };
 
