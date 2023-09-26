@@ -1,5 +1,7 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Donation from "./Donation";
+import Swal from "sweetalert2";
 
 const Donations = ({ search }) => {
   const [donations, setDonations] = useState([]);
@@ -7,18 +9,19 @@ const Donations = ({ search }) => {
     fetch("data.json")
       .then((res) => res.json())
       .then(function (donations) {
-        if (search) {
-          donations.filter((donation) => {
-            console.log(donation);
-          });
-        }
         setDonations(donations);
+        if (search) {
+          const categorys = donations.filter(
+            (category) => search === category.category
+          );
+          setDonations(categorys);
+        } else {
+          // Swal.fire("Oops!", "You have already added this", "error");
+        }
       });
     // .then((res) => res.json())
     // .then((data) => setDonations(data));
   }, []);
-
-  // console.log(donations);
 
   return (
     <div className="container mx-auto my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -27,6 +30,10 @@ const Donations = ({ search }) => {
       ))}
     </div>
   );
+};
+
+Donations.prototype = {
+  search: PropTypes.string,
 };
 
 export default Donations;

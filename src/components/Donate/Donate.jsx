@@ -27,17 +27,15 @@ const Donate = () => {
         </div>
       )}
 
-      <div
-        className={`text-center mt-20 ${
-          datalength === items.length ? "hidden" : "block"
-        } `}
-      >
-        <button
-          onClick={() => setDatalength(items.length)}
-          className="bg-[#009444] text-white px-6 py-3 rounded-md"
-        >
-          See All
-        </button>
+      <div className={`${datalength === items.length ? "hidden" : ""}`}>
+        <div className="text-center mt-20">
+          <button
+            onClick={() => setDatalength(items.length)}
+            className="bg-[#009444] text-white px-6 py-3 rounded-md"
+          >
+            See All
+          </button>
+        </div>
       </div>
     </div>
   );
