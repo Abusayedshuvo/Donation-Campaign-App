@@ -6,7 +6,6 @@ const Donate = () => {
   const [items, setItems] = useState([]);
   const [noData, setNoData] = useState(false);
   const [datalength, setDatalength] = useState(4);
-
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("items"));
     if (items) {
@@ -27,7 +26,11 @@ const Donate = () => {
         </div>
       )}
 
-      <div className={`${datalength === items.length ? "hidden" : ""}`}>
+      <div
+        className={`${
+          datalength === items.length || items.length < 4 ? "hidden" : ""
+        }`}
+      >
         <div className="text-center mt-20">
           <button
             onClick={() => setDatalength(items.length)}

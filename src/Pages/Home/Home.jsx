@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const Home = () => {
   const [search, setSearch] = useState("");
-  const handleSearch = (event) => {
-    event.preventDefault();
-    setSearch(event.target.search.value);
-  };
 
+  const handleSearch = () => {
+    const searchInput = document.getElementById("search-field");
+    setSearch(searchInput.value);
+  };
   return (
     <>
       <Banner handleSearch={handleSearch}></Banner>

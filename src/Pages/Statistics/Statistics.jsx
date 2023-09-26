@@ -13,7 +13,7 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container mx-auto flex-col flex justify-center items-center h-[75vh]">
       <PieChart
         style={{ height: "300px" }}
         totalValue={12}
@@ -25,19 +25,27 @@ const Statistics = () => {
         data={[
           {
             title: "Your Donation",
-            lineWidth: 20,
             value: `${items.length ? items.length : 12}`,
             color: "#00C49F",
           },
           {
             title: "Total Donation",
-            lineWidth: 80,
             value: `${remain ? remain : 1}`,
             color: "#FF444A",
           },
         ]}
       />
       ;
+      <div className="flex gap-40 justify-between mt-16">
+        <p>
+          <span>Your Donation</span>
+          <span className="bg-[#00C49F] w-20 h-2 absolute mt-2 ml-4"></span>
+        </p>
+        <p>
+          <span>Total Donation</span>
+          <span className="bg-[#FF444A] w-20 h-2 absolute mt-2 ml-4"></span>
+        </p>
+      </div>
     </div>
   );
 };
